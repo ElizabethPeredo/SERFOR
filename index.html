@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demanda Adicional UE-008</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <!--Header-->
+    <header class="navbar" id="Header">
+        <i class="fa fa-dollar"></i>
+    </header>
+
+    <!--Banner-->
+    <section class="landing__page" id="home">
+        <div class="landing__page-container">
+            <div class="landing__page-text">
+                <h1 style="text-transform: uppercase;" data-scroll-reveal="enter from the bottom after 0.1s">
+                    <b>
+                        Solicitud de demanda adicional de recursos para atender las inversiones vinculadas al Programa
+                        de Inversiones del Bicentenario
+                    </b>
+                </h1>
+
+                <p data-scroll-reveal="enter from the bottom after 0.8s">
+                    La Unidad Ejecutora 008 remitieron la solicitud de la demanda adicional de recursos solicitada para
+                    financiar 36 inversiones y 16 estudios de preinversión por un monto total de <b
+                        class="bg-color1 text-white"> S/60,731,948</b> de los cuales <b class="bg-color1 text-white">
+                        S/53,164,619</b> corresponden al financiamiento de las inversiones enmarcadas en la Agenda del
+                    Bicentenario (32 inversiones) y <b class="bg-color1 text-white">S/7,567,329</b> al financiamiento de
+                    otras inversiones encargadas a esta Unidad Ejecutora (20 inversiones)</p>
+                <br />
+            </div>
+            <div class="landing__page-img">
+                <img src="" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Section Cards-->
+    <section class="container__medium">
+        <!--Section Button-->
+        <section class="container__center">
+                <div class="search" id="search-container">
+                   <input type="text" id="search-input" class="searchTerm" placeholder="Buscar">
+                   <button type="submit" class="searchButton" id="search">
+                     <i class="fa fa-search"></i>
+                  </button>
+                </div>
+             </div>
+            <div id="buttons" class="txt-center">
+                <button class="button-value" onclick="filterProduct('all')">All</button>
+                <button class="button-value" onclick="filterProduct('TIPO1')">
+                    TIPO 1
+                </button>
+                <button class="button-value" onclick="filterProduct('TIPO2')">
+                    TIPO 2
+                </button>
+                
+                
+        </section>
+
+        <!--Section Cards-->
+        <section class="container__medium">
+            <main class="container__post" id="cards">
+
+            </main>
+        </section>
+    </section>
+
+
+
+    <section class="home" id="#home"></section>
+
+    <section class="inversiones"></section>
+
+    <script src="js/page.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/cards/cards.js"></script>
+</body>
+
+</html>
