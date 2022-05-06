@@ -8,7 +8,7 @@
 @import "navbar.css";
 @import "search.css";
 @import "landing-page.css";
-@import "responsive.css";
+
 
 *,
 *::after,
@@ -176,11 +176,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 .horizontal {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: stretch;
-  flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 /* ====================
@@ -611,8 +611,8 @@ input:hover {
 
 select,
 datalist {
-  background-color: var(--color2);
-  color: black;
+  background-color: var(--color1);
+  color: white;
   border: 0.1em solid var(--color1);
   border-radius: 0;
   margin: 0 0.5em;
@@ -620,6 +620,7 @@ datalist {
   -webkit-appearance: button;
   appearance: button;
   outline: none;
+  font-size: 1.5rem;
 }
 
 datalist:after,
@@ -1066,4 +1067,15 @@ pale-teal,
 }
 
 
-@media (max-width: 750px) {}
+
+@import "responsive.css";
+
+@media (max-width: 1200px) {
+
+  .horizontal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap !important;
+  }
+}

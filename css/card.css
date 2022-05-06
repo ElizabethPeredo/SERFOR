@@ -112,7 +112,6 @@
   cursor: pointer;
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 1rem;
 }
 .card-post__tag a{
   width: auto;
@@ -134,7 +133,8 @@
   font-weight:bolder;
   text-align: center;
   font-size:1.5rem;
-  line-height: 3rem;
+  line-height: 1.2rem;
+  padding-bottom: 1rem;
 }
 .card-post__creator {
   padding-bottom: 0.75rem;

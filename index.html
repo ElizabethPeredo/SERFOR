@@ -20,13 +20,13 @@
                     <img src="https://www.serfor.gob.pe/portal/wp-content/uploads/2021/01/midagri-serfor.png" alt=""
                         class="navbar__logo-img" title="SERFOR"></a>
             </div>
-            
+
             <div class="navbar__items">
                 <ul>
                     <a href="https://elizabethperedo.github.io/SERFOR/">Inicio</a>
 
                     <!--AQUI AGREGAR LOS LINK-->
-                    <a href="./anexo1.html">Anexo 1</a>
+                    
 
                 </ul>
             </div>
@@ -60,41 +60,68 @@
     </section>
 
     <!--Section Cards-->
-    <section class="container__medium">
+    <section class="container__large">
         <!--Section Button-->
-        <section class="container__center">
-            <div class="search" id="search-container">
+        <section class="container__medium horizontal">
+            <!-- <div-- class="search" id="search-container">
                 <input type="text" id="search-input" class="searchTerm" placeholder="Buscar">
                 <button type="submit" class="searchButton" id="search">
                     <i class="fa fa-search"></i>
                 </button>
-            </div>
-            </div>
-            <div id="buttons" class="txt-center">
-                <button class="button-value" onclick="filterProduct('all')">All</button>
-                <button class="button-value" onclick="filterProduct('TIPO1')">
-                    TIPO 1
-                </button>
-                <button class="button-value" onclick="filterProduct('TIPO2')">
-                    TIPO 2
-                </button>
+            </div-->
 
+            <div id="filters" class="horizontal">
 
+                <p><b>BUSCAR: </b></p>
+                <div class="">
+                    <select id="tipo1" class="">
+                        <option value="">-- ATFFS --</option>
+                        <option value="ATFFS_Ancash">ATFFS_Ancash</option>
+                        <option value="ATFFS_Apurímac">ATFFS_Apurímac
+                        </option>
+                        <option value="ATFFS_Arequipa">ATFFS_Arequipa
+                        </option>
+                        <option value="ATFFS_Cajamarca">ATFFS_Cajamarca
+                        </option>
+                        <option value="ATFFS_Cusco">ATFFS_Cusco
+                        </option>
+                        <option value="ATFFS_Lambayeque">ATFFS_Lambayeque
+                        </option>
+                        <option value="ATFFS_Lima">ATFFS_Lima
+                        </option>
+                        <option value="ATFFS_Piura">ATFFS_Piura
+                        </option>
+                        <option value="ATFFS_Puno">ATFFS_Puno
+                        </option>
+                        <option value="ATFFS_Sierra_Central">ATFFS_Sierra_Central
+                        </option>
+                    </select>
+                </div>
+
+                <div class="">
+                    <select id="tipo2" class="">
+                        <option value="">-- Fase --</option>
+                        <option value="Fase_de_Formulación_y_Evaluación">Fase Formulación Evaluación </option>
+                        <option value="Fase_de_Ejecución">Fase Ejecución </option>
+                    </select>
+
+                </div>
+
+            </div>
         </section>
 
         <!--Section Cards-->
-        <section class="container__medium">
             <main class="container__post" id="cards">
 
             </main>
-        </section>
     </section>
 
 
     <section class="inversiones"></section>
 
     <script src="js/script.js"></script>
-    <script src="js/cards/cards.js"></script>
+    <script src="js/cards/card.js"></script>
+
 </body>
 
 </html>
