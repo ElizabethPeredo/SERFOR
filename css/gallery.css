@@ -1,0 +1,101 @@
+/* ====================
+    * GALLERY *
+==================== */
+.container__gallery {
+    height: calc(300px + 1rem);
+    width: 100%;
+    margin:0rem;
+    padding: 0rem;
+    position: relative;  
+  }
+  
+  .container__gallery img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 5s;
+    margin:0rem;
+    padding: 0rem;
+    object-fit: cover;
+  }
+  
+  .container__gallery input[type=radio] {
+    position: relative;
+    bottom: calc(-300px + 2.5rem);
+    left: 50%;
+  }
+
+  .container__gallery-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    position: relative;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 25px;
+    width: 25px;
+    background: var(--black);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    outline: none;
+    position: relative;
+    z-index: 1000;
+    opacity: 0.7;
+  }
+  .container__gallery-input:hover {
+    background: var(--color1);
+    transform: rotate(360deg);
+  }
+  .container__gallery-input:checked {
+    background: var(--color1);
+  }
+  .container__gallery-input:checked::before {
+    width: 25px;
+    height: 25px;
+    display:flex;
+    content: '\f05d';
+    font-size: 15px;
+    font-weight:bold;
+    position: absolute;
+    align-items:center;
+    justify-content:center;
+    font-family:'Font Awesome 5 Free';
+  }
+  .container__gallery-input:checked::after {
+    background: var(--color1);
+    content: '';
+    display: block;
+    position: relative;
+    z-index: 100;
+  }
+  .container__gallery-input {
+    border-radius: 50%;
+  }
+  .container__gallery-input::after {
+    border-radius: 50%;
+  }
+  
+  
+  .container__gallery input[type=radio]:nth-of-type(1):checked ~ img:nth-of-type(1) {
+    opacity: 1;
+  }
+  
+  .container__gallery input[type=radio]:nth-of-type(2):checked ~ img:nth-of-type(2) {
+    opacity: 1;
+  }
+  
+  .container__gallery input[type=radio]:nth-of-type(3):checked ~ img:nth-of-type(3) {
+    opacity: 1;
+  }
+  
+  .container__gallery input[type=radio]:nth-of-type(4):checked ~ img:nth-of-type(4) {
+    opacity: 1;
+  }
+
+  

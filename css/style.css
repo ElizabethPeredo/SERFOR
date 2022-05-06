@@ -4,11 +4,10 @@
 @import "root.css";
 @import "grid.css";
 @import "card.css";
-@import "banner.css";
 @import "navbar.css";
 @import "search.css";
 @import "landing-page.css";
-
+@import "gallery.css";
 
 *,
 *::after,
